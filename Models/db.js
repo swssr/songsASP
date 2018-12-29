@@ -1,0 +1,1 @@
+db.Songs.insertMany([{ 'Name': 'Ibiza Mix', 'src': 'https://audiomack.com/tumisong', 'artist_name': 'Tumisong' }, { 'Name': 'Blood Sweat & Tears', 'src': 'https://audiomack.com/tumisong', 'artist_name': 'Tumisong' }])

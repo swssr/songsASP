@@ -1,5 +1,5 @@
-const uri = "api/todo";
-let todos = null;
+const uri = "api/music";
+let songs = null;
 function getCount(data) {
   const el = $("#counter");
   let name = "to-do";
@@ -23,7 +23,7 @@ function getData() {
     url: uri,
     cache: false,
     success: function(data) {
-      const tBody = $("#todos");
+      const tBody = $("#songs");
 
       $(tBody).empty();
 
@@ -59,7 +59,7 @@ function getData() {
         tr.appendTo(tBody);
       });
 
-      todos = data;
+      songs = data;
     }
   });
 }
@@ -97,7 +97,7 @@ function deleteItem(id) {
 }
 
 function editItem(id) {
-  $.each(todos, function(key, item) {
+  $.each(songs, function(key, item) {
     if (item.id === id) {
       $("#edit-name").val(item.name);
       $("#edit-id").val(item.id);

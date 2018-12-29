@@ -25,6 +25,11 @@ namespace dot_net_api.Controllers
                 _context.SaveChanges();
             }
         }
+
+        public MusicController()
+        {
+        }
+
         // GET: api/Song
         [HttpGet]
         public async Task<ActionResult<IEnumerable<SongItem>>> GetSongItems()
